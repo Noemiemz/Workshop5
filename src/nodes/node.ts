@@ -80,7 +80,7 @@ export async function node(
 
       // phase 2
       await sendMessage(2, nodeState.k!, majorityValue, nodeId, N, BASE_NODE_PORT);
-      const decidedValue = getMajorityValuePhase2(phase2Values, N, F, majorityValue);
+      getMajorityValuePhase2(phase2Values, N, F, majorityValue);
       
     }
 
